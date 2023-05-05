@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/calcButtons"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_below="@+id/calcView">
+    <include layout="@layout/calculadora_gamer_row1" />
+    <include layout="@layout/calculadora_gamer_row2" />
+    <include layout="@layout/calculadora_gamer_row3" />
+    <include layout="@layout/calculadora_gamer_row4" />
+</LinearLayout>
