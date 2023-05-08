@@ -17,10 +17,12 @@ public class Act2 extends AppCompatActivity {
         setContentView(R.layout.main_int_c);
         // Capturar o que intent devolve
         Intent intent = getIntent();
-        Bundle b = intent.getBundleExtra("stringBundle");
-        String umaString = b.getString("umaString");
+        //Bundle b = intent.getBundleExtra("stringBundle");
+        //String umaString = b.getString("umaString");
         String mensagem = intent.getStringExtra("mensagem");
-        int umInteiro = intent.getIntExtra("umInteiro", 0);
-        Toast.makeText(this, umaString + " " + mensagem + " " + umInteiro, Toast.LENGTH_LONG).show();
+        //int umInteiro = intent.getIntExtra("umInteiro", 0);
+        //Toast.makeText(this, umaString + " " + mensagem + " " + umInteiro, Toast.LENGTH_LONG).show();
+
+        Toast.makeText(this, mensagem, Toast.LENGTH_LONG).show();
     }
 }

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menuJ1" android:title="MenuJ1"></item>
+    <item android:id="@+id/menuJ2" android:title="MenuJ2" android:icon="@drawable/android"
+        android:showAsAction="ifRoom|withText"></item>
+    <item android:id="@+id/menuJ3" android:title="MenuJ3"></item>
+</menu>
+
+
+<!--
+ifRoom: se houver espaço na barra de ação, o item será exibido lá. Caso contrário, ele será exibido no menu de overflow.
+withText: exibe o texto do item.
+never: o item nunca será exibido na barra de ação. Ele sempre será exibido no menu de overflow.
+always: o item sempre será exibido na barra de ação. Ele nunca será exibido no menu de overflow.
+-->

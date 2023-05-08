@@ -1,6 +1,9 @@
 package com.example.app.rv;
 
 import static android.content.ContentValues.TAG;
+
+import android.content.Context;
+import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +12,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.app.Act2;
 import com.example.app.R;
 import java.util.List;
 
@@ -19,9 +24,11 @@ O adapter ira preencher os dados no recycleview. no entanto, ele precisa de um V
 public class PessoaAdapter extends RecyclerView.Adapter<PessoaAdapter.PessoaViewHolder> {
 
     List<Pessoa> pessoas;
+    Context ctx;
 
-    PessoaAdapter(List<Pessoa> lista) {
+    PessoaAdapter(List<Pessoa> lista, Context ctx) {
         this.pessoas = lista;
+        this.ctx = ctx;
     }
 
     /*
@@ -32,7 +39,7 @@ public class PessoaAdapter extends RecyclerView.Adapter<PessoaAdapter.PessoaView
     public PessoaAdapter.PessoaViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.rvitempessoa, parent, false);
-        PessoaViewHolder pvh = new PessoaViewHolder(v);
+        PessoaViewHolder pvh = new PessoaViewHolder(v, parent.getContext());
         return pvh;
     }
 
@@ -57,9 +64,11 @@ public class PessoaAdapter extends RecyclerView.Adapter<PessoaAdapter.PessoaView
         TextView nomeView;
         TextView idadeView;
         ImageView fotoView;
+        Context ctx;
 
-        public PessoaViewHolder(View itemView) {
+        public PessoaViewHolder(View itemView, Context ctx) {
             super(itemView);
+            this.ctx = ctx;
             itemView.setOnClickListener(this);
             nomeView = (TextView)itemView.findViewById(R.id.nomeView);
             idadeView = (TextView)itemView.findViewById(R.id.idadeView);
@@ -68,6 +77,9 @@ public class PessoaAdapter extends RecyclerView.Adapter<PessoaAdapter.PessoaView
 
         @Override
         public void onClick(View v) {
+            Intent intent = new Intent(this.ctx, Act2.class);
+            intent.putExtra("nome", nomeView.getText().toString());
+            this.ctx.startActivity(intent);
             Log.d(TAG, "onClick " + getLayoutPosition() + nomeView.getText().toString());
         }
     }
