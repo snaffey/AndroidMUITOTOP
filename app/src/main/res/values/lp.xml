@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="lp">
+        <item>PHP</item>
+        <item>Java</item>
+        <item>HTML</item>
+        <item>CSS</item>
+        <item>JavaScript</item>
+        <item>Python</item>
+    </string-array>
+    <string-array name="pages">
+        <item>https://www.php.net</item>
+        <item>https://www.java.com</item>
+        <item>https://www.w3schools.com/html/</item>
+        <item>https://www.w3schools.com/css/</item>
+        <item>https://www.w3schools.com/js/</item>
+        <item>https://www.python.org</item>
+    </string-array>
+
+</resources>

@@ -1,5 +1,6 @@
 package com.example.applicationblow.fragment;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
@@ -9,12 +10,13 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.app.R;
-import com.example.namespace.R;
+import com.example.applicationblow.fragment.MainFrag2;
 
 public class MainActFrag2 extends Activity {
     Button btn;
     private FragmentTransaction ft;
 
+    @SuppressLint("MissingInflatedId")
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mainactfrag2);
