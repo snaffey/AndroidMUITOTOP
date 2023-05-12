@@ -10,8 +10,4 @@
         <item name="android:textColor">#00ff00</item>
         <item name="android:textSize">45sp</item>
     </style>
-    <style name="btnStyle" parent="Theme.App">
-        <item name="android:textColor">#ff0000</item>
-        <item name="android:textSize">@dimen/txtBtnSize</item>
-    </style>
 </resources>

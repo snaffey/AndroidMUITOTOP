@@ -15,7 +15,7 @@
         android:theme="@style/Theme.App"
         tools:targetApi="31">
         <activity
-            android:name=".frag.MainActFrag1"
+            android:name=".AppSergio.Main"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

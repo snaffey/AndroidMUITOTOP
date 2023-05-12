@@ -1,13 +1,5 @@
 <resources>
     <string name="app_name">app</string>
-    <string name="txt_1">a</string>
-    <string name="txt_2">a\n</string>
-    <string name="txt_btn_1">btn</string>
-    <string name="m2_txt_2">a</string>
-    <string name="m2_txt_3">a</string>
-    <string name="m2_txt_1">a</string>
-    <string name="m3_txt_autor">a</string>
-    <string name="m3_txt_texto">a</string>
     <string name="num7">7</string>
     <string name="num8">8</string>
     <string name="num9">9</string>
@@ -26,13 +18,10 @@
     <string name="operationResult">=</string>
     <string name="operationDot">.</string>
     <string name="default_calc">def</string>
-    <string name="txt_5">inc</string>
-    <string name="txt_btn_default">btn</string>
     <string name="ChamarActB">actb</string>
     <string name="actB">avtb</string>
     <string name="ChamarActA">cacta</string>
     <string name="actA">acta</string>
     <string name="envmsg">envmsg</string>
     <string name="enviar">enviar</string>
-    <string name="somar">somar</string>
 </resources>
